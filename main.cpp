@@ -5,7 +5,7 @@
 using namespace std;
 int main(int argc, char const *argv[]) {
   /* code */
-  vector<string> args(argc, argc + argv);
+  vector<string> args(argv, argc + argv);
   if (args.size() == 1) {
     /* help */
     cout << "HETF(High Efficient Text Formatter)" << endl;
